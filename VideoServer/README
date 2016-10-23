@@ -1,0 +1,2 @@
+docker build -t videoserver .
+docker run -d -p 80:80 videoserver 
