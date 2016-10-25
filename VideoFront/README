@@ -1,0 +1,2 @@
+docker build -t videofront .
+docker run -d -p 80:80 -t videofront
