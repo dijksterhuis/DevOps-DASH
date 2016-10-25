@@ -1,4 +1,6 @@
 docker build -t videoprep .
 docker run -i -v $PWD/data:/data -t videoprep /bin/bash
+
+# Dashify video file
 cd /data
-./dashify.sh <videofile>
+dashify.sh <videofile>

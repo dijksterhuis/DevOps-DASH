@@ -19,7 +19,7 @@ ffmpeg -i ${1} -s 1920x1080 -c:v libx264 -b:v 4000k -r 24 -x264opts keyint=48:mi
 
 # Based on https://www.radiantmediaplayer.com/guides/working-with-mp4box.html
 MP4Box -dash 4000 -rap -bs-switching no -profile dashavc264:live \
-   -out ${name}/${name}.mpd \
+   -out ${name}/manifest.mpd \
 	tmp/${name}-640x360_600k.mp4#audio \
 	tmp/${name}-640x360_600k.mp4#video \
 	tmp/${name}-1280x720_2200k.mp4#video \
