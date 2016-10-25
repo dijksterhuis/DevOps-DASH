@@ -5,15 +5,13 @@
 		<script src="scripts/dash.all.min.js"></script>
 		<script>
 			function init() {
-				var url ="http://localhost:8080/bbb/bbb.mpd";
+				var url ="http://localhost:81/bbb/manifest.mpd";
 				var video = document.querySelector("#videoPlayer");
 				var player = dashjs.MediaPlayer().create();
 				player.initialize(video, url, true);
 			};
-
 			window.onload=init;
 		</script>
-
 		<style>
 			video {
 				width: 640px;
